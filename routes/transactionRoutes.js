@@ -1,12 +1,12 @@
-const express = require("express");
-const {
+import express from "express";
+import {
   addTransaction,
   getTransactions,
-} = require("../controllers/transactionController");
-const { protect } = require("../middlewares/authMiddleware");
+} from "../controllers/transactionController.js";
+import { protect } from "../middlewares/authMiddleware.js";
 const router = express.Router();
 
 router.post("/", protect, addTransaction);
 router.get("/", protect, getTransactions);
 
-module.exports = router;
+export default router;
