@@ -10,7 +10,7 @@ const app = express();
 connectDB();
 const allowedOrigins = [
   "http://localhost:5173",
-  "https://pure-ledger.netlify.app/",
+  "https://pure-ledger.netlify.app",
 ];
 const corsOptions = {
   origin: allowedOrigins,
