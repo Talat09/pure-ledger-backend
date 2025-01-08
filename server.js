@@ -11,6 +11,7 @@ connectDB();
 const allowedOrigins = [
   "http://localhost:5173",
   "https://pure-ledger.netlify.app",
+  "https://pure-ledger-frontend-seven.vercel.app",
 ];
 const corsOptions = {
   origin: allowedOrigins,
