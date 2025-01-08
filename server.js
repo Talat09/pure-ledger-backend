@@ -8,7 +8,10 @@ import accountHeadRoutes from "./routes/accountHeadRoutes.js";
 dotenv.config();
 const app = express();
 connectDB();
-const allowedOrigins = ["http://localhost:5173"];
+const allowedOrigins = [
+  "http://localhost:5173",
+  "https://pure-ledger.netlify.app/",
+];
 const corsOptions = {
   origin: allowedOrigins,
   credentials: true, // Enable cookies
